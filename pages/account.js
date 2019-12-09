@@ -4,17 +4,9 @@ import { connect } from "react-redux";
 import { AppWithAuthorisation } from "../src/components/App";
 
 const AccountPage = ({ authUser }) => {
-  if (null === authUser) {
-    return (
-      <h1>
-        authUser doesn't exist. <br />
-        Please <a href="/signin">Sign In</a>
-      </h1>
-    );
-  }
   return (
     <AppWithAuthorisation>
-      <h1>Account: {authUser.email}</h1>
+      <h1>Account: {authUser ? authUser.email : null}</h1>
     </AppWithAuthorisation>
   );
 };
