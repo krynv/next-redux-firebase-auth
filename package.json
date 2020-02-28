@@ -14,7 +14,7 @@
     "recompose": "^0.30.0",
     "redux": "^4.0.4",
     "styled-components": "^5.0.1",
-    "webpack": "^4.41.2"
+    "webpack": "^4.41.6"
   },
   "scripts": {
     "dev": "next",
